@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- MAIN CSS-->
+    <link rel="stylesheet" href="./styles.css">
+    <title>protfolio</title>
+</head>
+
+<body>
+    <!--===  heder profile=-->
+    <div class="logo">
+        <marquee>Welcome To My<span> Portfolio </span></marquee>
+    </div>
+    <header class="profile container">
+        <i class="fa-solid fa-sun change-theme" id="theme-button"></i>
+
+        <div class="profile_container grid">
+            <div class="profile_data">
+                <div class="profile_border">
+                    <div class="profile_perfil">
+                        <img src="images/MYPHOTO.jpg" alt="">
+                    </div>
+                </div>
+                <h2 class="profile_name">Samiran Chanak</h2>
+                <h3 class="profile_profession">student</h3>
+
+                <ul class="profile_social">
+                    <a href="" class="profile_social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="profile_social-link"><i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" class="profile_social-link"><i class="fa-brands fa-github"></i></a>
+                </ul>
+            </div>
+
+            <div class="profile_info grid">
+                <div class="profile_info-group">
+                    <h3 class="profile_info-number">0</h3>
+                    <p class="profile_info-description">year of <br>wrok</p>
+                </div>
+
+                <div class="profile_info-group">
+                    <h3 class="profile_info-number">0</h3>
+                    <p class="profile_info-description">Completed <br>projects</p>
+                </div>
+
+                <div class="profile_info-group">
+                    <h3 class="profile_info-number">0</h3>
+                    <p class="profile_info-description"> Satisfied<br>customers</p>
+                </div>
+
+            </div>
+            <div class="pr">
+                <div class="profile_buttons">
+                    <a href="" class="button">Download CV<i class="fa-solid fa-download"></i></a>
+                </div>
+
+                <div class="profile_buttons">
+                    <a href="" class="button button-clr">Contact ME <i class="fa-regular fa-paper-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main js-->
+
+    <main class="main">
+        <section class="filters container">
+            <ul class="filters_content">
+                <button class="filters_button  filer-tab-active" id="project-btn"
+                    data-target="projects">projects</button>
+                <button class="filters_button" id="skill-btn" data-target="Skills">Skills</button>
+            </ul>
+            <div class="filters_sction">
+                <!-- projects-->
+                <div class="projects_contents grid filters_active" data-content id="projects">
+                    <article class="projects_card">
+                        <img id="samiran" src="images/1.ai.jpg" alt="" class="projects_img">
+                        <div class="projects_modal">
+                            <div>
+                                <span class="projects_subtitle">Ai projects</span>
+                                <h3 class="projects_title">AI made simple</h3>
+                                <a href="" class="projects_button button button_small">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects_card">
+                        <img src="images/2final.jpg" alt="" class="projects_img">
+                        <div class="projects_modal">
+                            <div>
+                                <span class="projects_subtitle">projects</span>
+                                <h3 class="projects_title">final year projects</h3>
+                                <a href="" class="projects_button button button_small">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--skill-->
+                <div class="skill_content grid " data-content id="Skills">
+                    <div class="skill_area">
+                        <h3 class="skills_title">
+                            My technical skills
+                        </h3>
+
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="fa-solid fa-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">HTML</h3>
+                                        <span class="skills_level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="fa-solid fa-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">CSS</h3>
+                                        <span class="skills_level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="fa-solid fa-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">javascript</h3>
+                                        <span class="skills_level">Advanced</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="fa-solid fa-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">JAVA</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="fa-solid fa-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Bootstrap</h3>
+                                        <span class="skills_level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="fa-solid fa-check"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">PYTHON</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+
+    <footer class="footer container">
+        <span class="footer_copy">
+            samiranchanak@gmail.com <br> ph:- 7602932468
+        </span>
+    </footer>
+    <!--Main js-->
+    <script src="./main.js"></script>
+</body>
+
+</html>
